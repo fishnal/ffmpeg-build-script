@@ -700,8 +700,8 @@ if $NONFREE_AND_GPL; then
 fi
 
 if [[ ! "$SKIPAOMAV1" == "yes" ]]; then
-  if build "av1" "42dfaa1d47022650bc157dbe20d210591d14bae4"; then
-    # libaom 42dfaa1d47022650bc157dbe20d210591d14bae4 == v3.9.0
+  if build "av1" "7cbb7eb5f8a028b593619dc1d829b98e0c3677aa"; then
+    # libaom 7cbb7eb5f8a028b593619dc1d829b98e0c3677aa == v3.11.0
     download "https://aomedia.googlesource.com/aom/+archive/$CURRENT_PACKAGE_VERSION.tar.gz" "av1.tar.gz" "av1"
     make_dir "$PACKAGES"/aom_build
     cd "$PACKAGES"/aom_build || exit
